@@ -71,7 +71,7 @@ open class SabBarController: UITabBarController, UITableViewDataSource, UITableV
     
     internal var sidebar = UIView()
     internal let toolbar = UIToolbar()
-    let tabTable = UITableView(frame: CGRect.zero, style: .plain)
+    open let tabTable = UITableView(frame: CGRect.zero, style: .plain)
 
     fileprivate var navigationBarHeight : CGFloat {
         return navigationBarHeight(self.traitCollection)
@@ -578,12 +578,12 @@ open class SabBarController: UITabBarController, UITableViewDataSource, UITableV
     }
 }
 
-public class SabBarCell: UITableViewCell {
-    let imageHeight : CGFloat = 32
+open class SabBarCell: UITableViewCell {
+    open let imageHeight : CGFloat = 32
     let labelHeight : CGFloat = 14
     
     var tabLabel: UILabel!
-    var tabImage: UIImageView!
+    open var tabImage: UIImageView!
     
     var tabSelectedImage : UIImage?
     var tabDeselectedImage : UIImage?
@@ -594,7 +594,7 @@ public class SabBarCell: UITableViewCell {
         commonInit()
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         commonInit()
     }
@@ -637,11 +637,11 @@ public class SabBarCell: UITableViewCell {
         self.addConstraint(NSLayoutConstraint(item: centeredView, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override open func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         if selected {
             tabImage.tintColor = tintColor
