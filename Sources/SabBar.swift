@@ -71,7 +71,7 @@ open class SabBarController: UITabBarController, UITableViewDataSource, UITableV
     
     internal var sidebar = UIView()
     internal let toolbar = UIToolbar()
-    internal let tabTable = UITableView(frame: CGRect.zero, style: .plain)
+    let tabTable = UITableView(frame: CGRect.zero, style: .plain)
 
     fileprivate var navigationBarHeight : CGFloat {
         return navigationBarHeight(self.traitCollection)
@@ -578,7 +578,7 @@ open class SabBarController: UITabBarController, UITableViewDataSource, UITableV
     }
 }
 
-class SabBarCell: UITableViewCell {
+public class SabBarCell: UITableViewCell {
     let imageHeight : CGFloat = 32
     let labelHeight : CGFloat = 14
     
