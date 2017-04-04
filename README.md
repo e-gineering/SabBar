@@ -2,6 +2,8 @@
 
 Drop-in `UITabBarController` subclass that shows a sidebar with tabs based on trait collections.
 
+This is a fork of [macteo's SabBar](https://github.com/macteo/SabBar)
+
 [![License MIT](https://img.shields.io/cocoapods/l/SabBar.svg)](https://raw.githubusercontent.com/macteo/SabBar/master/LICENSE) [![Version](https://img.shields.io/cocoapods/v/SabBar.svg)](https://cocoapods.org/?q=SabBar) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![travis-ci](https://travis-ci.org/macteo/SabBar.svg?branch=master)](https://travis-ci.org/macteo/SabBar)
 [![codecov.io](https://codecov.io/github/macteo/SabBar/coverage.svg?branch=master)](https://codecov.io/github/macteo/SabBar?branch=master) ![Swift 3](https://img.shields.io/badge/language-Swift%203-EB7943.svg) ![iOS 8+](https://img.shields.io/badge/iOS-8+-EB7943.svg)
 
